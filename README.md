@@ -5,7 +5,7 @@ The Web Client will interact with a RESTful Web Service - displayed on an Apache
 
 ***
 ## Run
-First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed) and make an account on [Postman](https://www.getpostman.com) because you are going to need the browser [extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ro) .
+First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed). You also need to make an account on [Postman](https://www.getpostman.com) because you are going to need the browser [extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ro) .
 
 ### 1. Clone Repo <br>
 Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
