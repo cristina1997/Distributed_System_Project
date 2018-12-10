@@ -24,14 +24,14 @@ Copy the src code from the cloned repository and paste it into the RMI project t
     Browse to the Tomcat directory from Step 1 and then click Finish – "Tomcat v7.0 Server at localhost" should be displayed on the "Servers" tab. 
     
 ### 2. Create Maven
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> Go to -> File -> New Project -> Maven Project -> Next -> Next``` <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> Add Archetype``` <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> org.glassfish.jersey.archtypes``` in the Group Id<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> jersey-quickstart-webapp``` in the Artifact ID <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> 2.16``` in the Archtype Version then click OK <br>
+    ```> Go to -> File -> New Project -> Maven Project -> Next -> Next``` <br>
+    ```> Add Archetype``` <br>
+    Type ```> org.glassfish.jersey.archtypes``` in the Group Id<br>
+    Type ```> jersey-quickstart-webapp``` in the Artifact ID <br>
+    Type ```> 2.16``` in the Archtype Version then click OK <br>
     Enter ie.gmit.sw as the Group Id (package name) <br>
     Enter REST_Lab as the Artifact Id <br>
     Click Finish
 
 ### 3. HTTPServlet library not found ERROR
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> Go to Properties -> Project Facets -> Runtimes``` and make sure that Apache Tomcat v7.0 is checked <br>
+    ```> Go to Properties -> Project Facets -> Runtimes``` and make sure that Apache Tomcat v7.0 is checked <br>
