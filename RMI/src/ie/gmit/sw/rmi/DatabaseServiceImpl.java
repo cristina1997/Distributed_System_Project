@@ -62,7 +62,7 @@ public class DatabaseServiceImpl extends UnicastRemoteObject implements Database
 	
 	public void update(Order order) throws RemoteException, SQLException {
 		System.out.println("Update");
-		ps = conn.prepareStatement("UPDATE orders SET Date = CURDATE(), CustID = 5, CarID = 5 WHERE OrderID = 9883;"); // the mysql statement used in this method to read the data
+		ps = conn.prepareStatement("UPDATE orders SET Date = CURDATE(), CustID = 3, CarID = 3 WHERE OrderID = 1234;"); // the mysql statement used in this method to read the data
 		
 		ps.executeUpdate(); // execution of the myql statement
 
@@ -70,7 +70,7 @@ public class DatabaseServiceImpl extends UnicastRemoteObject implements Database
 	
 	public void delete(Order order) throws SQLException {
 		System.out.println("Delete");
-		ps = conn.prepareStatement("DELETE FROM orders WHERE OrderID = 9886;"); // the mysql statement used in this method to read the data
+		ps = conn.prepareStatement("DELETE FROM orders WHERE OrderID = 1234;"); // the mysql statement used in this method to read the data
 		
 		ps.executeUpdate(); // execution of the myql statement
 	}
