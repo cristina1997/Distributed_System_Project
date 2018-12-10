@@ -55,8 +55,9 @@ Copy the src folder from the cloned repository and paste it into the RMI project
 ### 5. XML to Java Converter
     Go to Schema.xsd and notice the code there. That is the XML code that will be generated into Java code for the models
     Open your terminal/cmd in the project folder 
-    > xjc -d "location of  your project folder" -p gmit.Model "location of your Schema.xsd file" 
+    > xjc -d "location of your project folder" -p gmit.Model "location of your Schema.xsd file" 
     Press Enter
+    Copy the models from the location folder, where they have been created in the models package in both the RMI and REST projects
 
 ### 6. Run
 #### RMI
