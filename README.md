@@ -66,3 +66,23 @@ Copy the src folder from the cloned repository and paste it into the RMI project
      Right click on the REST project
      > Go to -> Run As -> Run on Server <br>
      
+### 7. Postman
+    Open Postman extension and log in. <br>
+    Enter URL in the URL bar http://localhost:8080/Jersey_Rest/webapi/myresource. <br>
+    Click Headers button and enter Content-Type and Accept as headers and application/xml in value. <br>
+    Select from the dropdown next to the URL text box <br>
+       -> POST - if you want to add data <br>
+       -> PUT - if you want to update data <br>
+       -> DELETE - if you want to remove data <br>
+    Select raw from the buttons available below URL text box. <br>
+    Select XML (application/xml) from the dropdown. <br>
+    In the textarea available below, post your request object: <br>
+      <order>
+       <orderId> - number id - </orderId>
+       <date> - yyyy-mm-dd - </date>
+       <car> - number car id - </car>
+       <cust> - number cutstomer id - </cust>
+      </order>
+      
+    Hit Send.
+     
