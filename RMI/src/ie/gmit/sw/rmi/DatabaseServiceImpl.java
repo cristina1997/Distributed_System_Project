@@ -27,9 +27,9 @@ public class DatabaseServiceImpl extends UnicastRemoteObject implements Database
 
 	@Override
 	public ArrayList<Order> read() throws RemoteException, SQLException {
-		System.out.println("In read");
+		System.out.println("Read");
 		final ArrayList<Order> orders = new ArrayList<Order>();
-		ps = conn.prepareStatement("select * from orders ");
+		ps = conn.prepareStatement("SELECT * FROM orders;");
 		ResultSet rs = ps.executeQuery();
 
 		while (rs.next()) {
@@ -44,6 +44,29 @@ public class DatabaseServiceImpl extends UnicastRemoteObject implements Database
 		return orders;
 	}
 
+	@Override
+	public void create(Order order) throws RemoteException, SQLException {
+		System.out.println("Create");
+		ps = conn.prepareStatement("INSERT INTO orders (Date, CustID, CarID) VALUES (CURDATE(), 4, 4);");
+		ps.executeUpdate();
+
+	}
+	
+	public void update(Order order) throws RemoteException, SQLException {
+		System.out.println("Update");
+		ps = conn.prepareStatement("UPDATE orders SET Date = CURDATE(), CustID = 5, CarID = 5 WHERE OrderID = 9883;");
+		ps.executeUpdate();
+
+	}
+	
+	public void delete(Order order) throws SQLException {
+		System.out.println("Delete");
+		ps = conn.prepareStatement("DELETE FROM orders WHERE OrderID = 9886;");
+		
+//		ps.setInt(1, order.getOrderId());
+		ps.executeUpdate();
+	}
+
 	private void connect() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -52,4 +75,5 @@ public class DatabaseServiceImpl extends UnicastRemoteObject implements Database
 			System.out.println(e.getMessage());
 		}
 	}
+
 }
