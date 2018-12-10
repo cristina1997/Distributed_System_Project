@@ -1,1 +1,37 @@
 # Distributed_System_Project
+This is a project in which I have developed a Car Hire Booking System using the JAX-RS/Jersey, Java RMI and JAXB frameworks and a Web Client page that allows the users to Create/Read/Update/Delete bookings for a specific vehicle for a given set of dates. 
+The Web Client will interact with a RESTful Web Service - displayed on an Apache Tomcat Server - which acts as a RMI client to a RMI Database Server.
+ 
+
+***
+## Run
+First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed).
+
+1. **Clone Repo** <br>
+Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> git clone https://github.com/cristina1997/Emerging_Technologies_Project.git```
+
+2. **Create RMI** <br>
+Open your Eclipse JEE <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> Go to -> File -> New Project -> Other -> Java Project and type RMI as the Project Name``` <br>
+Open your terminal/cmd in the project folder <br>
+Copy the src code from the cloned repository and paste it into the RMI project that you created
+
+3. **Create REST** <br>
+### 1. Add Server
+    Go to the “Servers” tab in Eclipse, and click the link to create a new server. 
+    Select "Tomcat v7.0 Server" and click Next. 
+    Browse to the Tomcat directory from Step 1 and then click Finish – "Tomcat v7.0 Server at localhost" should be displayed on the "Servers" tab. 
+    
+### 2. Create Maven
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> Go to -> File -> New Project -> Maven Project -> Next -> Next``` <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;```> Add Archetype``` <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> org.glassfish.jersey.archtypes``` in the Group Id<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> jersey-quickstart-webapp``` in the Artifact ID <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> 2.16``` in the Archtype Version then click OK <br>
+    Enter ie.gmit.sw as the Group Id (package name) <br>
+    Enter REST_Lab as the Artifact Id <br>
+    Click Finish
+
+### 3. HTTPServlet library not found ERROR
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type ```> Go to Properties -> Project Facets -> Runtimes``` and make sure that Apache Tomcat v7.0 is checked <br>
