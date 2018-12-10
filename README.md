@@ -5,7 +5,7 @@ The Web Client will interact with a RESTful Web Service - displayed on an Apache
 
 ***
 ## Run
-First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed).
+First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed) and make an account on Postman.
 
 ### 1. Clone Repo <br>
 Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
@@ -40,7 +40,7 @@ Copy the src and lib folders from the cloned repository and paste it into the RM
     Click Finish
     
 Open your terminal/cmd in the project folder <br>
-Copy the src code from the cloned repository and paste it into the RMI project that you created
+Copy the src folder from the cloned repository and paste it into the RMI project that you created
 
 #### HTTPServlet library not found ERROR
     > Go to > Properties -> Project Facets -> Runtimes and make sure that Apache Tomcat v7.0 is checked <br>
@@ -52,3 +52,8 @@ Copy the src code from the cloned repository and paste it into the RMI project t
     > Go to -> MySQL -> MySQL Console
     Copy from the Database.sql and paste into the console
 
+### 5. XML to Java Converter
+    Go to Schema.xsd and notice the code there. That is the XML code that will be generated into Java code for the models
+    Open your terminal/cmd in the project folder <br>    
+    > xjc -d "location of  your project folder" -p gmit.Model "location of your Schema.xsd file" 
+    Press Enter
