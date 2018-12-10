@@ -5,7 +5,7 @@ The Web Client will interact with a RESTful Web Service - displayed on an Apache
 
 ***
 ## Run
-First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed) and make an account on Postman.
+First and foremost, you will need to install [WAMP](http://www.wampserver.com/en/) and [Tomcat 7](https://tomcat.apache.org/download-70.cgi) and [Eclipse JEE](https://www.eclipse.org/downloads/packages/release/helios/sr2/eclipse-ide-java-ee-developers) (if not already installed) and make an account on [Postman](https://www.getpostman.com) because you are going to need the browser [extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ro) .
 
 ### 1. Clone Repo <br>
 Open your terminal/cmd in the folder you wish to download the repository and execute the following <br>
@@ -24,7 +24,7 @@ Copy the src and lib folders from the cloned repository and paste it into the RM
 
 ### 3. Create REST <br>
 ##### Add Server
-    Go to the “Servers” tab in Eclipse, and click the link to create a new server. 
+    Go to the "Servers" tab in Eclipse, and click the link to create a new server. 
     Select "Tomcat v7.0 Server" and click Next. 
     
    Browse to the Tomcat directory from Step 1 and then click Finish – "Tomcat v7.0 Server at localhost" should be displayed on the "Servers" tab. 
@@ -57,3 +57,12 @@ Copy the src folder from the cloned repository and paste it into the RMI project
     Open your terminal/cmd in the project folder <br>    
     > xjc -d "location of  your project folder" -p gmit.Model "location of your Schema.xsd file" 
     Press Enter
+
+### 6. Run
+#### RMI
+     Right click on the RMI project
+     > Go to -> Run As -> Java Application <br>
+#### REST
+     Right click on the REST project
+     > Go to -> Run As -> Run on Server <br>
+     
