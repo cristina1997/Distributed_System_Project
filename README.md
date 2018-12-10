@@ -84,7 +84,7 @@ Copy the src folder from the cloned repository and paste it into the RMI project
        <cust> - number cutstomer id - </cust>
       </order>
     Reffer to screenshots below:
-    ![picture](https://github.com/cristina1997/Distributed_System_Project/blob/master/Postman%20Screenshots/Header-Postman-POST.PNG)
+![alt text](https://github.com/cristina1997/Distributed_System_Project/blob/master/Postman%20Screenshots/Header-Postman-POST.PNG)
     
       
     Hit Send.
