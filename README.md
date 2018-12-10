@@ -43,4 +43,12 @@ Open your terminal/cmd in the project folder <br>
 Copy the src code from the cloned repository and paste it into the RMI project that you created
 
 #### HTTPServlet library not found ERROR
-    > Go to Properties -> Project Facets -> Runtimes and make sure that Apache Tomcat v7.0 is checked <br>
+    > Go to > Properties -> Project Facets -> Runtimes and make sure that Apache Tomcat v7.0 is checked <br>
+    
+### 4. MySQL Database <br>
+##### Add Database
+    Double click on WAMP to get it running
+    Go the the hidden icons and click on WAMP
+    > Go to -> MySQL -> MySQL Console
+    Copy from the Database.sql and paste into the console
+
